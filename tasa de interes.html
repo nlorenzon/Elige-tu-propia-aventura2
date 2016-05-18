@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+            <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+
+                <div id="output">  Para hacer crecer un capital inicial vas a requerir  </div>
+
+
+
+
+              <script>
+
+                      prompt("balance inicial")
+                      prompt("balance objetivo")
+                      prompt("Tasa de interes")
+
+                      var ci = prompt("balance inicial")
+                      var co = prompt ("balance objetivo")
+                      var ti = parseFloat(prompt ("tasa de interes"))
+                      var mes = 0
+
+                      while (ci <= co) {
+
+                        ci = ci * ( 1 + ti)
+
+                        mes++
+                      }
+
+                      console.log(mes)
+
+                      document.queryselector("#output").textcontent=mes
+
+              </script>
+
+
+
+
+    </body>
+</html>
